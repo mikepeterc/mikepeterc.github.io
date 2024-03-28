@@ -5,29 +5,43 @@
 <title>Test</title>
 <style>
 body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif; /* 设置字体 */
-  background-image: url('/images/test.jpg'); /* 将图片作为背景 */
-  background-size: cover; /* 背景图片填充整个屏幕 */
-  background-position: center; /* 图片在屏幕上居中 */
-  height: 100vh; /* 设置body高度占满整个视口 */
-  display: flex;
-  justify-content: center; /* 将内容水平居中 */
-  align-items: center; /* 将内容垂直居中 */
-  color: white; /* 设置文字颜色为白色 */
+  background-image: url("/images/test.jpg");
+  background-size: cover; /* 自适应大小并填充整个页面 */
+  background-position: center; /* 图片居中 */
+  margin: 0; /* 清除默认的外边距 */
+  padding: 0; /* 清除默认的内边距 */
+  height: 100vh; /* 设置页面高度为视口高度 */
+  position: relative; /* 相对定位 */
 }
-.container {
-  text-align: center; /* 文本居中 */
+
+.label {
+  position: absolute; /* 绝对定位 */
+  top: 10%; /* 上边距为页面高度的一半 */
+  left: 20%; /* 左边距为页面宽度的一半 */
+  transform: translate(-50%, -50%); /* 将文本水平和垂直居中 */
+  color: rgb(255, 255, 255); /* 设置文字颜色为白色 */
+  font-size:40px;
+  text-align: center;
+}
+
+.text {
+  position: absolute; /* 绝对定位 */
+  top: 70%; /* 上边距为页面高度的一半 */
+  left: 50%; /* 左边距为页面宽度的一半 */
+  transform: translate(-50%, -50%); /* 将文本水平和垂直居中 */
+  color: rgb(255, 255, 255); /* 设置文字颜色为白色 */
+  font-size:40px;
+  text-align: center;
 }
 </style>
 </head>
 <body>
-
-<div class="container">
-  <h2>Power Mike</h2>
-  <p>网站正在积极建设中</p>
+<div class="label">
+  Power Mike
 </div>
-
+<div class="text">
+  Coming Soon!
+</div>
 </body>
 </html>
+
