@@ -1,24 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<title>Coming Soon</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>顶部淡蓝色条带示例</title>
 <style>
+/* 重置页面的margin和padding */
 
+a {
+    color: inherit; /* 继承父元素的颜色 */
+    text-decoration: none; /* 去掉下划线 */
+}
 
+/* 设置超链接在悬停状态下的样式 */
+a:hover {
+    color: inherit; /* 继承父元素的颜色 */
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 设置顶部条带的样式 */
+.top-bar {
+    background-color: #53a2cf; /* 淡蓝色 */
+    height: 200px; /* 条带高度 */
+    width: 100%; /* 宽度为整个屏幕 */
+}
+
+.label {
+  position: absolute; /* 绝对定位 */
+  top: 10%; /* 上边距为页面高度的一半 */
+  left: 20%; /* 左边距为页面宽度的一半 */
+  transform: translate(-50%, -50%); /* 将文本水平和垂直居中 */
+  color: rgb(255, 255, 255); /* 设置文字颜色为白色 */
+  font-size:40px;
+  text-align: center;
+}
+
+.label1 {
+  position: absolute; /* 绝对定位 */
+  top: 10%; /* 上边距为页面高度的一半 */
+  left: 90%; /* 左边距为页面宽度的一半 */
+  transform: translate(-50%, -50%); /* 将文本水平和垂直居中 */
+  color: rgb(255, 255, 255); /* 设置文字颜色为白色 */
+  font-size:40px;
+  text-align: center;
+}
+
+.content {
+    flex-grow: 1; /* 填充剩余空间 */
+    
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    text-align: center; /* 文字居中 */
+}
 </style>
 </head>
 <body>
+<div class="top-bar"></div>
+<div class="label">
+  
+    <p><a href="../index.html" >Power Mike</a></p>
+  
+  </div>
+  <div class="label1">
+    
+   
+    <p>About</p>
+  </div>
 
-<div class="text2">
- Test Page
-
- <p>Detail coming soon<p>
-
-    <p><a href="../index.html" >return</a></p>
-
-
+  <div class="content">
+    <h1 class="title">居中内容示例</h1>
+  
+    <p>这里是正文内容，居中显示在页面的中部。</p>
+    <p>这里是第二行正文内容，也居中显示在页面的中部。</p>
 </div>
-
 </body>
 </html>
