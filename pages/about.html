@@ -56,6 +56,26 @@ html, body {
     text-align: center; /* 文字居中 */
 }
 </style>
+<script>
+    // 获取当前日期并更新页面上的日期显示
+    function displayDate() {
+        // 创建一个新的 Date 对象
+        var currentDate = new Date();
+        // 获取年、月、日
+        var year = currentDate.getFullYear();
+        var month = currentDate.getMonth() + 1; // 月份从0开始，需要加1
+        var day = currentDate.getDate();
+        // 格式化日期
+        var formattedDate = year + "-" + month + "-" + day;
+        // 将日期显示在 id 为 "dateDisplay" 的元素中
+        document.getElementById("dateDisplay").textContent = formattedDate;
+    }
+    
+    // 页面加载完成时调用 displayDate 函数
+    window.onload = function() {
+        displayDate();
+    };
+    </script>
 </head>
 <body>
 <div class="top-bar"></div>
@@ -71,10 +91,11 @@ html, body {
   </div>
 
   <div class="content">
-    <h1 class="title">居中内容示例</h1>
+    <h1 class="title">Resume</h1>
+    <p><span id="dateDisplay"></span></p>
   
-    <p>这里是正文内容，居中显示在页面的中部。</p>
-    <p>这里是第二行正文内容，也居中显示在页面的中部。</p>
+    <p>Coming Sooon</p>
+    <p>Thanks for your patience!</p>
 </div>
 </body>
 </html>
