@@ -13,7 +13,15 @@ body {
   height: 100vh; /* 设置页面高度为视口高度 */
   position: relative; /* 相对定位 */
 }
+a {
+    color: inherit; /* 继承父元素的颜色 */
+    text-decoration: none; /* 去掉下划线 */
+}
 
+/* 设置超链接在悬停状态下的样式 */
+a:hover {
+    color: inherit; /* 继承父元素的颜色 */
+}
 .label {
   position: absolute; /* 绝对定位 */
   top: 10%; /* 上边距为页面高度的一半 */
@@ -65,7 +73,8 @@ body {
 </head>
 <body>
 <div class="label">
-  Power Mike
+  
+  <p><a href="https://www.instagram.com/x.626_w/">Power Mike</a></p>
 </div>
 <div class="text">
   Coming Soon!
@@ -76,6 +85,9 @@ body {
 <div class="text2">
  Supported by Mike
 </div>
+
+
+
 <div class="line"></div>
 </body>
 </html>
